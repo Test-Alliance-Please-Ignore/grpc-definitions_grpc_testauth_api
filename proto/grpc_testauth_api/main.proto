@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "grpc_testauth_api/paps.proto";
+
+service Fleets {
+    rpc GetUserStatsByCorporation(GetUserStatsByCorporationRequest) returns (stream UserFleetParticipationStats);
+}

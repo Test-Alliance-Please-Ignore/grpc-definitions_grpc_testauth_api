@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message UserFleetParticipationStats {
+    string primary_character_name = 1;
+    int64 primary_character_id = 2;
+    int32 thirty_day_average = 3;
+    int32 sixty_day_average = 4;
+}
+
+message GetUserStatsByCorporationRequest {
+    int64 corporation_id = 1;
+}
